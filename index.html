@@ -9,21 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Quote of the Day</h1>
-        <p id="quote"></p>
-        <button onclick="generateQuote()">New Quote</button>
+        <div class="quote-box">
+            <p id="quote">"Life is what happens when you're busy making other plans."</p>
+            <p id="author">- John Lennon</p>
+            <button onclick="fetchQuote()">Next Quote</button>
+        </div>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
     </div>
 
-    <script>
-       function generateQuote() {
-    fetch('quote.php')  // Ensure the path is correct
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('quote').innerText = data;
-        })
-        .catch(error => console.error('Error fetching quote:', error)); // Add error handling
-}
 
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
