@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote of the Day</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
+        <h1 class="title">Quote of the Day</h1>
         <div class="quote-box">
             <p id="quote">"Life is what happens when you're busy making other plans."</p>
             <p id="author">- John Lennon</p>
+            <!-- Use inline onclick to call the function -->
             <button onclick="generateQuote()">Next Quote</button>
         </div>
-    <div class="social-links">
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://tiktok.com" target="_blank">TikTok</a>
+        
+        <div class="separator"></div> <!-- Line Separator -->
+
+        <!-- Social Links in One Row -->
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
     </div>
-    
-    <script defer src="/main.js"></script>
 
+    <!-- JavaScript file -->
+    <script defer src="main.js"></script>
 </body>
-
 </html>
